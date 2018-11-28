@@ -10,8 +10,17 @@ public class Main {
         System.out.println(t2);
     }
 
-    private static String cat(int start, int end)
-    {
-        //Code goes here
+    private static String cat(int start, int end) {
+
+        String c = "";
+        StringBuffer test = new StringBuffer();
+        for (int i = start; i <= end; i++) {
+
+            c += (char) i;
+            test.append((char) i);
+
+        }
+
+        return test.toString();
     }
 }
